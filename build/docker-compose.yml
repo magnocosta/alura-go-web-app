@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=alura
+      - POSTGRES_PASSWORD=alura!12
+      - POSTGRES_DB=alura_db
+    ports:
+      - "5432:5432"
+
+
